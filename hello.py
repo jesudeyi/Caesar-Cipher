@@ -19,11 +19,15 @@ while option == 'y' or option == 'Y':
         print("1. Encrypting a message")
         print("2. Decrypting a message") 
         choice = int(input("Enter an option: "))  
+
+        # Encryption
         if choice == 1:
             plainText = input("Enter the message you want to encrypt: ")
             key = int(input("Enter your desired encryption key (shift value): "))
             encryptedText = caesar_cipher(plainText, key)
             print(encryptedText)
+
+         # Decryption   
         elif choice == 2:
             encryptedText = input("Enter the endoded message you want to decrypt: ")
             key = int(input("Enter the correct decryption key (shift value): "))
